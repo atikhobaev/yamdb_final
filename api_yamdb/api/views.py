@@ -1,6 +1,7 @@
 from django.core.mail import send_mail
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
+
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, mixins, viewsets
 from rest_framework.decorators import action
@@ -9,10 +10,10 @@ from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
 from users.utils import generate_confirmation_code
+
 from .filters import TitleFilter
 from .permissions import (IsAuthorOrReadOnly, IsRoleAdmin, IsRoleModerator,
                           ReadOnly)
@@ -21,7 +22,6 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           ProfileSerializer, ReviewSerializer,
                           TitleGetSerializer, TitlePostSerializer,
                           UserRegistrationSerializer, UserSerializer)
-
 
 MAIL_SUBJECT = 'Your confirmation_code'
 FROM_MAIL = 'staff@yamdb.ru'

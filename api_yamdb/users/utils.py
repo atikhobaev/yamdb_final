@@ -1,7 +1,6 @@
 import string
 from random import sample
 
-
 LENGTH = 20
 
 
