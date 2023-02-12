@@ -1,5 +1,4 @@
 from django.urls import include, path
-
 from api.views import (CategoryViewSet, CommentViewSet, GenreViewSet,
                        GetTokenView, ReviewViewSet, TitleViewSet,
                        UserRegistrationView, UserViewSet)
