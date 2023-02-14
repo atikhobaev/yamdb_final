@@ -1,5 +1,5 @@
 # API YAMDB
-![yamdb workflow](https://github.com/atikhobaev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![yamdb workflow](https://github.com/atikhobaev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)  
 API YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий может быть расширен администратором.
   
 http://62.84.125.100/admin/  
